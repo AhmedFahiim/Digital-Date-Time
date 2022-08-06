@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Anek Latin", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  position: relative;
+  height: 100vh;
+  background-color: #201e29;
+  background-image: url(/images/bg-stars.svg);
+}
+main .hails {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+main .counter {
+  width: 40%;
+  position: relative;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main .counter .head-word {
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+main .counter .boxes {
+  display: flex;
+  justify-content: space-between;
+}
+main .counter .box {
+  text-align: center;
+  flex-basis: 21.25%;
+}
+main .counter .box .number {
+  position: relative;
+  padding: 20px 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+main .counter .box .number h2 {
+  position: relative;
+  top: -2px;
+  color: hsl(345deg, 95%, 68%);
+  font-size: 60px;
+  letter-spacing: 3px;
+  z-index: 1;
+}
+main .counter .box .number .line {
+  position: absolute;
+  background-color: hsl(234deg, 17%, 12%);
+  width: 100%;
+  height: 0.7px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+main .counter .box .number .bullet {
+  position: absolute;
+  background-color: hsl(234deg, 17%, 12%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+main .counter .box .number .bullet.left {
+  left: -4px;
+}
+main .counter .box .number .bullet.right {
+  right: -4px;
+}
+main .counter .box .number .background {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 50%;
+}
+main .counter .box .number .background.top {
+  background-color: hsl(236deg, 21%, 20%);
+  top: 1%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+main .counter .box .number .background.bottom {
+  background-color: hsl(236deg, 21%, 25%);
+  bottom: 0;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+main .counter .box .type {
+  display: inline-block;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 5px;
+}
+main .links {
+  position: relative;
+  top: 300px;
+  z-index: 1;
+  text-align: center;
+}
+main .links img {
+  margin-right: 20px;
+}
+
+@media (max-width: 1199px) {
+  main .counter {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    margin: auto;
+  }
+  main .links {
+    top: 450px;
+  }
+}
+@media (max-width: 767px) {
+  main .counter {
+    width: 90%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  main .counter {
+    width: 70%;
+  }
+}/*# sourceMappingURL=main.css.map */
