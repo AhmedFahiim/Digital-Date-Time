@@ -42,6 +42,7 @@ main .counter .head-word {
 main .counter .boxes {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 main .counter .box {
   text-align: center;
@@ -113,13 +114,13 @@ main .counter .box .type {
   letter-spacing: 5px;
 }
 main .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
   position: relative;
   top: 300px;
   z-index: 1;
-  text-align: center;
-}
-main .links img {
-  margin-right: 20px;
 }
 
 @media (max-width: 1199px) {
@@ -137,9 +138,16 @@ main .links img {
   main .counter {
     width: 90%;
   }
+  main .counter .boxes .box {
+    flex-basis: 48%;
+    margin-bottom: 15px;
+  }
+  main .links {
+    top: 250px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   main .counter {
     width: 70%;
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
